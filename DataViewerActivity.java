@@ -55,8 +55,7 @@ public class DataViewerActivity extends Activity {
         mGraph.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             //   Intent i = new Intent(getApplicationContext(),DynamicXYPlotActivity.class);
-             //   startActivity(i);
+
             }
         });
 
@@ -105,12 +104,6 @@ public class DataViewerActivity extends Activity {
 
     public boolean isRunning(Context ctx) {
         ActivityManager activityManager = (ActivityManager) ctx.getSystemService(Context.ACTIVITY_SERVICE);
-        //   List<ActivityManager.RunningTaskInfo> tasks = activityManager.getRunningTasks(Integer.MAX_VALUE);
-
-        // List<ActivityManager.RunningTaskInfo> processInfos  = activityManager.getRunningAppProcesses();
-
-        // List<ActivityManager.RunningTaskInfo> tasks = activityManager.getRunning(Integer.MAX_VALUE);
-
 
         final Set<String> activePackages = new HashSet<String>();
         final List<ActivityManager.RunningAppProcessInfo> processInfos = activityManager.getRunningAppProcesses();
@@ -127,26 +120,6 @@ public class DataViewerActivity extends Activity {
             return false;
 
 
-//    public void getValue(){
-//
-//        if(Constants.buffer2 != null){
-//            byte [] buffer = Constants.buffer2 ;
-//            ch1 = new String(buffer).substring(0,2);
-//            ch2 = new String(buffer).substring(2,4);
-//
-//
-//        }
-//    }
-//
-//    public void setvalue() {
-//        mChannel1.setText(ch1);
-//        mChannel2.setText(ch2);
-////        mChannel1.setText(ch3);
-////        mChannel2.setText(ch4);
-////        mChannel1.setText(ch5);
-////        mChannel2.setText(ch6);
-////        mChannel1.setText(ch7);
-////        mChannel2.setText(ch8);
    }
 
 
