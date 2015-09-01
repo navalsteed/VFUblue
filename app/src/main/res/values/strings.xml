@@ -16,7 +16,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">BlueV 1.1</string>
+    <string name="app_name">BlueServer</string>
     <!--  BluetoothChat -->
     <string name="send">Send</string>
     <string name="connect">Connect</string>
@@ -40,7 +40,9 @@
     <string name="secure_connect">Connect a device - Secure</string>
     <string name="insecure_connect">Connect a device - Insecure</string>
     <string name="discoverable">Make discoverable</string>
+    <string name="plot">Plot graph</string>
     <string name="run">Run</string>
+    <string name="stop">Stop</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

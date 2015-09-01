@@ -32,8 +32,16 @@
         android:showAsAction="never"
         android:title="@string/discoverable"/>
 
-    <item android:id="@+id/asconnected"
-        android:title="ac connect"
-        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/filepath"
+        android:showAsAction="never"
+        android:title="File saving option"/>
+
+
+    <item
+        android:id="@+id/graph"
+        android:showAsAction="never"
+        android:title="@string/plot"/>
+
 
 </menu>

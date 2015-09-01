@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.mohamed.blue11" >
+
+    package="com.example.mohamed.blue1Server" >
+
+
 
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
@@ -10,14 +14,17 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/bluecenter"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        >
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.mohamed.blueServer.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,22 +34,24 @@
         </activity>
 
         <activity
-            android:name=".DeviceListActivity"
+            android:name="com.example.mohamed.blueServer.DeviceListActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/select_device"
             android:theme="@android:style/Theme.Holo.Dialog"
-            tools:ignore="NewApi" />
-
+             tools:ignore="NewApi" />
         <activity
-            android:name=".Bluetooth"
+            android:name="com.example.mohamed.blueServer.Bluetooth"
                       > </activity>
         <activity
-            android:name=".Wifi"
+            android:name="com.example.mohamed.blueServer.MainActivity_Plot"
+            > </activity>
+        <activity
+            android:name="com.example.mohamed.blueServer.Wifi"
             >
         </activity>
 
         <activity
-            android:name=".DataViewerActivity">
+            android:name="com.example.mohamed.blueServer.DataViewerActivity">
             <intent-filter>
                 <action android:name="com.example.mohamed.blue11">
 
